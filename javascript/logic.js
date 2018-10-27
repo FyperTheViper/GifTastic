@@ -1,21 +1,54 @@
 $(document).ready (function () {
 
-let buttonList = ["Happy", "Laughing", "Fun"];
-let mover = $(this).attr("data-state");
-let giphyURL = "https://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=cDJCSVzD3NJUPGzA3ZXqgrUr5aNtZn2w"
+    let buttonList = ["Happy", "Laughing", "Fun"];
+    let l = console.log
 
-function searchEngine () {
-    $.ajax({
-        url: giphyURL,
-        method: "GET"
+    gifPopulator(buttonList, "searchButton")
+
+
+    function gifPopulator (buttonList, buttonClass) {
+        $("#gifSpace").empty();
+        for (i = 0; i < buttonList.length; i++) {
+            
+            let b = $("<button>");
+            b.addClass(buttonClass);
+            b.attr("data-name", buttonList[i]);
+            b.text(buttonList[i]);
+            $("#gifSpace").append(b);
+        }
+
+    }
+
+
+    $("button").on("click", function() {
+        let query = $(this).data("name");
+        l(query)
+        let gifURL = "https://api.giphy.com/v1/gifs/search?q=" + query + "&api_key=cDJCSVzD3NJUPGzA3ZXqgrUr5aNtZn2w&limit=9";
+        $.ajax({
+            url: gifURL,
+            method: "GET"
+        })
+        .done(function(response){
+
+        })
+
     })
 
-}
-
-$("button").on("click", function() {
 
 
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 })

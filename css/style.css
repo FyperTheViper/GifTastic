@@ -1,0 +1,70 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #efd8ff;
+}
+
+
+
+#container {
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+}
+
+#title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.6em;
+    font-weight: 800;
+}
+#sub-text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#gifSpace {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+img {
+    padding: 10px;
+}
+
+button {
+    border: none; 
+    background: #d62000;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+#search-text {
+    font-weight: 700;
+}
+
+#gimme {
+ background: #931e0a;
+}

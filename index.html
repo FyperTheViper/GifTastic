@@ -5,26 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giftastic</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Orbitron|Press+Start+2P" rel="stylesheet">  
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 </head>
 <body>
-    <header>
-        <div></div>
-    </header>
+    <div id="container">
+        <header>
+            <img src="images/beepboop.png" alt="gifbot">
+            <p id="title">GIFBOT HUMAN FUN GENERATOR™ beta v0.8.21.0114</p>
+            <p id="sub-text">Humans require internet to keep them happy. Please human, find more things to make you happy. You must be Happy.</p>
+        </header>
 
-    <div id="buttonSpace"></div>
+        <div id="buttonSpace"></div>
 
-    <form>
-        <div class="form-group">
-            <label for="search-input">Search For:</label>
-            <input class="form-control" id="search-input">
-            <button id="gimme">Submit</button>
-        </div>
-    </form>
+        <form>
+            <div class="form-group">
+                <label id="search-text" for="search-input">Add More Hilarity Here, Human:</label>
+                <input class="form-control" id="search-input">
+                <button id="gimme">Add More LULZ!</button>
+            </div>
+        </form>
 
-    <div id="gifSpace"></div>
+    </div>
+        <div id="gifSpace"></div>
 
     <script type="text/javascript" src="javascript/logic.js"></script>
 </body>
